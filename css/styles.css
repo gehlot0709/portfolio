@@ -10932,15 +10932,33 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  transition: 0.5s;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
+.social-icons .social-icon:first-child:hover {
+  background-color: var(--bs-blue);
+  transform: rotate(360deg);
 }
+.social-icons .social-icon:nth-child(2):hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transform: rotate(360deg);
 
-.dev-icons {
+}
+.social-icons .social-icon:nth-child(3):hover {
+  background-color: red;
+  transform: rotate(360deg);
+
+}
+.social-icons .social-icon:nth-child(4):hover {
+  background-color: blue;
+  transform: rotate(360deg);
+
+}
+.hover {
   font-size: 3rem;
 }
 
