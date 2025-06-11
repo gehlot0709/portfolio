@@ -11051,3 +11051,49 @@ input:checked + .slider:before {
   top : 178px;
   right: 28px;
 }
+
+/* education card  */
+/* From Uiverse.io by kamehame-ha */ 
+.cards .card {
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(1px);
+  transform: scale(0.98);
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .tip {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cards .second-text {
+  font-size: 0.9rem;
+}
