@@ -32,3 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.getElementById("toggle-mode").addEventListener("change", function () {
+    document.body.classList.toggle("dark-mode", this.checked);
+});
